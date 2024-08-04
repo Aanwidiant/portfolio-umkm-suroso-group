@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Produk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <!-- My Style -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="navbar-logo">Suroso <span>Group</span></a>
+        <div class="navbar-nav">
+          <a class="nav_menu" href="index.html">Home</a>
+          <a class="nav_menu" href="pemesanan_produk.html">Pemesanan Produk</a>
+          <a class="nav_menu" href="gallery.html">Galeri</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="order-product">
+        <h2>Pemesanan <span>Produk</span></h2>
+        <section class="order-method">
+          <h3>Tata Cara <span>Pemesanan Produk</span></h3>
+          <p>Berikut adalah panduan singkat tentang cara mengisi formulir pemesanan:</p>
+          <ol>
+            <li>Produk: Masukkan nama produk yang ingin anda beli, yaitu: Arang Kayu, Madu, atau Gula Aren.</li>
+            <li>Jumlah: Masukkan jumlah produk yang ingin anda beli dalam satuan yang sesuai. Misalnya, jika anda ingin membeli 2 kg arang kayu, masukkan 2 di sini.</li>
+            <li>Nama: Masukkan nama lengkap anda sesuai dengan identitas anda.</li>
+            <li>Email: Masukkan alamat email anda yang valid. Ini akan digunakan untuk mengirimkan konfirmasi pembelian dan informasi pengiriman.</li>
+            <li>Nomer Telepon: Masukkan nomor telepon yang dapat dihubungi.</li>
+            <li>Alamat Pengiriman: Masukkan alamat lengkap tempat anda ingin produk dikirim. Termasuk informasi seperti nama jalan, nomor rumah, nama gedung (jika ada), kelurahan, kecamatan, kota, dan kode pos.</li>
+            <li>Jasa Pengiriman: Pilih jasa pengiriman yang diinginkan dari pilihan yang disediakan, yaitu: JNE, J&E, atau SiCepat.</li>
+            <li>
+              Setelah anda mengisi semua bidang dengan informasi yang benar, klik tombol "Beli Sekarang" untuk mengirimkan pesanan anda. Pastikan untuk memeriksa kembali semua informasi yang anda masukkan sebelum mengirimkan formulir.
+            </li>
+            <li>Periksa email anda untuk melihat konfirmasi pembelian dan metode pembayaran yang dapat dilakukan.</li>
+            <li>Setelah melakukan pembayaran, kirimkan bukti struk pembayaran ke nomer telepon Suroso Group yang tertera.</li>
+            <li>Setelah itu akan ada konfirmasi pesanan anda telah ditindaklanjuti.</li>
+            <li>Selamat berbelanja, jika ada yang ditanyakan bisa hubungi nomer telepon Suroso Group yang tertera.</li>
+          </ol>
+        </section>
+        <section class="order-form">
+          <div>
+            <h3>Form <span>Pemesanan</span></h3>
+            <form>
+              <label for="produk">Produk:</label>
+              <select id="produk" name="produk" required>
+                <option value="">Pilih Produk</option>
+                <option value="Produk 1">Arang Kayu</option>
+                <option value="Produk 2">Madu</option>
+                <option value="Produk 3">Gula Aren</option></select
+              ><br />
+              <label for="jumlah">Jumlah:</label>
+              <input type="number" id="jumlah" name="jumlah" min="1" required /><br />
+              <label for="nama">Nama:</label>
+              <input type="text" id="nama" name="nama" required /><br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required /><br />
+              <label for="no_telp">Nomer telepon:</label>
+              <input type="tel" id="no_telp" name="no telepon" pattern="[0-9]{10,12}" required /><br />
+              <label for="alamat">Alamat Pengiriman:</label><br />
+              <textarea id="alamat" name="alamat" rows="4" required></textarea><br />
+              <label>Jasa pengiriman:</label>
+              <input type="radio" id="ekspedisi_a" name="jasa_pengiriman" value="Ekspedisi 1" required />
+              <label for="ekspedisi_a">JNE</label>
+              <input type="radio" id="ekspedisi_b" name="jasa_pengiriman" value="Ekspedisi 2" required />
+              <label for="ekspedisi_b">J&T</label>
+              <input type="radio" id="ekspedisi_c" name="jasa_pengiriman" value="Ekspedisi 3" required />
+              <label for="ekspedisi_c">SiCepat</label><br />
+
+              <button type="submit">Pesan Sekarang</button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Suroso Group Corp&trade; 2024</p>
+    </footer>
+  </body>
+</html>
